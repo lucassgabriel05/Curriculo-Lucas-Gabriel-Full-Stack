@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f3f4f6; 
+    font-family: Arial, sans-serif;
+}
+#caixa_principal{ 
+
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto; 
+    padding: 40px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    word-wrap: break-word;
+}
+h1 { 
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+    
+h2{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    border-left: 0;
+    font-size: 30px;
+    margin: auto;
+    text-decoration: underline;
+}
+p{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    hr {
+    width: 100%; 
+    border: 0; 
+    border-top: 3px solid black; 
+    margin: 20px 0;
+ }
+
+.contato h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.imagens{
+    padding: 20px;
+    margin-top: 40px;
+    align-items:center;
+    text-align: center;
+}
+
+.imagens img{
+    width:45px;
+    margin-left:10px;
+    transition:0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagens img:hover{
+    transform:scale(1.2);
+}
+.imagens a {
+    text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+button{
+  background-color: #f9f9f9;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+.contato{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contato img{
+  width: 35px;
+  height: 30px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.contato img:hover{
+transform:scale(1.2);
+}
+.contato a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #caixa_principal {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+@media(max-width: 1000px){
+    body{
+     display: block;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10px;
+     padding: 0 10px;
+     line-height: 1.5;
+     }
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ font-size: 12px;
+ font-style: oblique;
+}
