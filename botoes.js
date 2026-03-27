@@ -30,4 +30,22 @@ window.onload = function() {
     } else {
         console.error("Botão 'baixar-curriculo' não encontrado no HTML.");
     }
+
+    const opcoes = {
+        margin: [10, 10, 10, 10], 
+        filename: 'Curriculo_Lucas_Gabriel.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { 
+            scale: 1.7,       // Diminui um pouco o tamanho para caber em 1 página no PC
+            useCORS: true,    
+            windowWidth: 900, // FORÇA o celular a renderizar como se fosse PC (evita cortes)
+            scrollY: 0,       // Começa a captura do topo, mesmo se você deu scroll
+            scrollX: 0
+        },
+        jsPDF: { 
+            unit: 'pt', 
+            format: 'a4', 
+            orientation: 'portrait' 
+        }
+    }
 };
