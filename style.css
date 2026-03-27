@@ -9,7 +9,7 @@ body {
 #caixa_principal{ 
 
     background-color: white;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 40px auto; 
     padding: 40px;
@@ -163,4 +163,23 @@ footer{
  margin: auto;
  font-size: 12px;
  font-style: oblique;
+}
+@media print {
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  #caixa_principal {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  button,
+  footer,
+  .imagens {
+    display: none;
+  }
 }
