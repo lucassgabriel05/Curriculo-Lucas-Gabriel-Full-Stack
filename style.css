@@ -5,6 +5,7 @@ body {
     margin: 0;
     background-color: #f3f4f6; 
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 #caixa_principal{ 
 
@@ -103,7 +104,7 @@ button:hover{
 .contato{
     display: flex;
     text-align: center;
-    align-items: center;
+    justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
 }
@@ -168,4 +169,36 @@ footer{
     h1, h2 { margin-top: 5px; margin-bottom: 5px; }
     p, li { margin-bottom: 2px; }
     .caixa_principal { padding: 15px !important; }
+}
+@page{
+  size: auto;
+  margin: auto;
+}
+@media print {
+  body {
+    margin: 0;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* evita cortar conteúdo */
+  * {
+    page-break-inside: avoid;
+  }
 }
